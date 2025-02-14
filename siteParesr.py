@@ -100,5 +100,5 @@ class Parser:
         if group_link:
             table, titles = self.get_schedule_table(group_link, current_week)
             if table:
-                return self.table_to_image(table, output_file, titles=titles)
+                return self.table_to_image(table, output_file, titles=titles), titles
         return False
